@@ -1,0 +1,13 @@
+<div class="tabWrapper">
+    <ul class="tab">
+      <li *ngFor="let tab of tabs"  (click)="onSelect(tab)"
+          [ngClass]="selectedTab==tab?'current':'another'">
+
+        {{tab.title}}
+        <button (click)="onSelectClose(tab)">X</button>
+      </li>
+    </ul>
+  <tab [tabs]="selectedTab"></tab>
+</div>
+
+

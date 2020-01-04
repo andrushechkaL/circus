@@ -1,0 +1,42 @@
+
+.ask{
+  grid-column: 2/3;
+  grid-row: 4;
+  margin: 20px 20px 20px 20px;
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  input[type=submit] {
+    background-color: dimgray;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: dimgray;
+  }
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    .column {
+      float: left;
+      width: 40%;
+      margin-top: 6px;
+      padding: 20px;
+    }
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+}

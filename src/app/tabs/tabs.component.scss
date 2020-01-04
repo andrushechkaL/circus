@@ -1,0 +1,22 @@
+.tabWrapper {
+  margin: 20px 20px;
+  .tab {
+    grid-column: 1/2;
+    list-style-type: none;
+    margin: 0;
+
+    .current{
+      background-color: green;
+    }
+    .another {
+      background-color: red;
+    }
+    li {
+      display: inline-block;
+      background-color: gainsboro;
+      border: 1px solid #ccc;
+      padding: 10px;
+
+    }
+  }
+}

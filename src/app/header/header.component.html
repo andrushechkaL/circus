@@ -1,0 +1,24 @@
+<div class="wrapper_header">
+  <div class="left_menu">
+    <ul class="nav_bar" routerLinkActive="active">
+      <!--<li *ngFor="let i of Menu" class="menu_list"> <a class="link" routerLink="{{i.url}}"> {{i.name}} </a> </li>-->
+      <li *ngFor="let i of Menu" class="menu_list"> <a class="link" [routerLink]="[{ outlets: { 'menu': [i.url] } }]"> {{i.name}} </a> </li>
+    </ul>
+
+  </div>
+
+  <div class="right_menu">
+    <a href="#"><img src="./assets/image/512px-Instagram_simple_icon.svg.png" width="45" height="45" alt="fail"></a>
+    <a href="#"><img src="./assets/image/5a97a30b8a950.png" width="45" height="45" alt="fail"></a>
+    <a href="#"><img src="./assets/image/5a979e490b13d.png" width="45" height="45" alt="fail"></a>
+
+  </div>
+
+
+  <!--<app-login></app-login>-->
+  <!--<app-registration></app-registration>-->
+  <!--<div class="sign_up">-->
+    <!--<a routerLink="/registration">Registration</a>-->
+    <!--<a routerLink="/login">Login</a>-->
+  <!--</div>-->
+</div>

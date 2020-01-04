@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+app-about-us, app-gallery {
+ grid-row: 1;
+}
+
+app-tabs, app-contact {
+  grid-row: 2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}

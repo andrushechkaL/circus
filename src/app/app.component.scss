@@ -1,0 +1,22 @@
+.Wrapper {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  background-color: #444;
+  margin-block-start: unset;
+  .WrapperHeader{
+    display: grid;
+    grid-row: 1;
+    grid-template-columns: 1fr 0.0fr 0.4fr;
+    background-color: #333;
+  }
+  .OutletMenu{
+    display: grid;
+
+  }
+}
+.Wrapper_Content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+

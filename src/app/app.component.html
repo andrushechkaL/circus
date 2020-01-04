@@ -1,0 +1,30 @@
+
+
+<div class="Wrapper">
+
+
+    <div class="WrapperHeader">
+      <app-header [Menu]="Menu"></app-header>
+      <router-outlet></router-outlet>
+
+    </div>
+  <div class="OutletMenu" >
+    <router-outlet name='menu'></router-outlet>
+  </div>
+  <app-slider></app-slider>
+  <!--<div>-->
+    <!--<p *ngFor="let i of Info">{{i.info_text}}</p>-->
+    <!--<p *ngFor="let j of Tab">{{j.text}}</p>-->
+  <!--</div>-->
+  <div class="Wrapper_Content">
+
+
+
+    <app-about-us [Info]="Info"></app-about-us>
+    <app-gallery [img]="Image"></app-gallery>
+    <app-tabs [tabs]="Tab"></app-tabs>
+    <app-contact></app-contact>
+  </div>
+
+
+</div>
